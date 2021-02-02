@@ -33,18 +33,24 @@ header {
   font-size: 20px;
 }
 
+.github-link {
+  color: rgb(253, 204, 204);
+  font-size: 30px;
+}
+
 .right-nav i {
   margin-right: 20px;
 }
 
 .main-header {
-  font-size: 40px;
+  font-size: 30px;
+  color: #1f1f1f;
 }
 
 .timer-container {
   width: 800px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 55px 0;
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.37);
   backdrop-filter: blur( 4px );
