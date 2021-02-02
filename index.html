@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+  <main class="all-content">
+    <div class="main-content">
+      <header>
+        <nav class="top-navigation">
+          <h1 class="main-header">Pom Timer <i class="fas fa-clock"></i></h1>
+          <ul class="right-nav">
+            <i class="fab fa-github"></i>
+            <i class="fas fa-donate"></i>
+          </ul>
+        </nav>
+      </header>
+      <section class="timer-container">
+        <div class="timer-types-container">
+          <ul class="timer-types">
+            <li><button class="btn" id="pomodoroBtn">Pomodoro</button></li>
+            <li><button class="btn" id="shortBreakBtn">Short Break</button></li>
+            <li><button class="btn" id="longBreakBtn">Long Break</button></li>
+          </ul>
+        </div>
+        
+        <div id="timer" class="timer">
+          25:00
+        </div>
+
+        <div class="timer-options-container">
+          <ul class="timer-options">
+            <li><button class="btn" id="startBtn">Start</button></li>
+            <li><button class="btn" id="pauseBtn">Pause</button></li>
+            <li><button class="btn" id="resetBtn">Reset</button></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="quote-container">
+        <p id="quote" class="quote">“All our dreams can come true, if we have the courage to pursue them.”</p>
+        <p id="quoteAuthor" class="quote-author">- Walt Disney</p>
+      </section>
+
+      <div class="more-info-container">
+        <p class="more-info">more info</p>
+        <i class="fas fa-arrow-down"></i>
+      </div>
+  
+
+    </div>
+    
+    
+    <section class="additional-info">
+      <h2 class="">What is the Pomodoro Technique?</h2>
+      <p>The Pomodoro technique is a well-researched time-management tool. You set the timer to 25 and you study, research, or anything productive that needs to be done. Then you take a break.</p>
+
+      <h2>Why use the Pomodoro Technique?</h2>
+      <p>It is a well-researched technique that maximizes the productivity of people.</p>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
