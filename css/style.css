@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: rgba( 245, 245, 245, 1);
 }
 
 .main-content {
   height: 100vh;
-  background: linear-gradient(180deg, rgba(255,120,120,20) 0%, rgba(245, 245, 245, 20) 100%);
+  width: 100vw;
+  background: linear-gradient(180deg, rgba(255,150,150,20) 0%, rgba(245, 245, 245, 20) 100%);
   font-family: Poppins, sans-serif;
   color: #1f1f1f;
   display: flex;
@@ -151,4 +156,42 @@ header {
   font-size: 15px;
   margin-bottom: 20px;
   line-height: 1.5;
+}
+
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: #e6e6e6;
+  padding: 30px;
+  color: black;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.social-link-container {
+  /* border: rgba(255,150,150,20) 1px solid; */
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 5px;
+  color: rgba(255,150,150,20);
+  background: rgba(245, 245, 245, 20);
+}
+
+.social-link-container:hover {
+  background: rgba(255,150,150,20);
+  color: rgba(245, 245, 245, 20);
+}
+
+.social-links a {
+  text-decoration: none;
 }
