@@ -53,11 +53,8 @@ class Timer {
     }
   
     start = () => {
-        if (this.onStart) {
-            this.onStart();
-        }
-        
         if (this.interval) {
+            console.log("hi");
             return;
         } else {
             this.tick();
@@ -67,6 +64,7 @@ class Timer {
   
     pause = () => {
         clearInterval(this.interval);
+        this.interval = 0;
     };
 
     reset = () => {
