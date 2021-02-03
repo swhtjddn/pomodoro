@@ -89,6 +89,19 @@ header {
   background-color: #ffe7e7;
 }
 
+.btn:active {
+  animation: pulse 1s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba( 255, 255, 255, 0.25 );
+  }
+  100% {
+    background-color: rgba(255, 139, 139, 0.25);
+  }
+}
+
 
 .activeBtn {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
