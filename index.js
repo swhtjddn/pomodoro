@@ -9,7 +9,7 @@ class Timer {
         this.resetBtn = resetBtn;
 
         this.active = 'pomodoro';
-        this.duration = 1500;
+        this.duration = 2;
         this.pomodoroBtn.classList.add('activeBtn');
         this.timer.innerHTML = new Date(this.duration * 1000).toISOString().substr(14, 5);
 
@@ -23,7 +23,7 @@ class Timer {
     }
 
     pomodoro = () => {
-        clearInterval(this.interval);
+        this.pause();
         this.active = 'pomodoro';
         this.duration = 1500;
         this.timer.innerHTML = new Date(this.duration * 1000).toISOString().substr(14, 5);
@@ -33,7 +33,7 @@ class Timer {
     }
 
     shortBreak = () => {
-        clearInterval(this.interval);
+        this.pause();
         this.active = 'short';
         this.duration = 300;
         this.timer.innerHTML = new Date(this.duration * 1000).toISOString().substr(14, 5);
@@ -43,7 +43,7 @@ class Timer {
     }
 
     longBreak = () => {
-        clearInterval(this.interval);
+        this.pause();
         this.active = 'long';
         this.duration = 900;
         this.timer.innerHTML = new Date(this.duration * 1000).toISOString().substr(14, 5);
@@ -54,7 +54,6 @@ class Timer {
   
     start = () => {
         if (this.interval) {
-            console.log("hi");
             return;
         } else {
             this.tick();
@@ -82,9 +81,9 @@ class Timer {
     tick = () => {
       if (this.timeRemaining <= 0) {
         this.pause();
-        if (this.onComplete) {
-          this.onComplete();
-        }
+        let audio = new Audio('assets/sounds/alarm.m4a');
+        audio.play();
+        this.reset();
       } else {
         this.timeRemaining = this.timeRemaining - 1;
         if (this.onTick) {
