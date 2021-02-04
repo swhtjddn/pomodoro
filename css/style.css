@@ -57,7 +57,6 @@ header {
   padding: 55px 0;
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.37);
-  backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 20px;
 }
@@ -80,7 +79,6 @@ header {
   margin: 0px 10px;
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.37);
-  backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 5px;
 }
