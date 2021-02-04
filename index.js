@@ -9,7 +9,7 @@ class Timer {
         this.resetBtn = resetBtn;
 
         this.active = 'pomodoro';
-        this.duration = 2;
+        this.duration = 1500;
         this.pomodoroBtn.classList.add('activeBtn');
         this.timer.innerHTML = new Date(this.duration * 1000).toISOString().substr(14, 5);
 
