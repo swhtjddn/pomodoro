@@ -7,7 +7,7 @@
 
 body {
   background: rgba( 245, 245, 245, 1);
-  font-size: 15px;
+  font-size: 1rem;
   font-family: Poppins, sans-serif;
   color: #1f1f1f;
 }
@@ -21,7 +21,8 @@ body {
 }
 
 .container {
-  width: 800px;
+  max-width: 800px;
+  width: 90%;
 }
 
 header {
@@ -42,7 +43,7 @@ header {
 
 .github-link {
   color: rgb(253, 204, 204);
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .github-link:focus{
@@ -58,7 +59,7 @@ header {
 }
 
 .main-header {
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .timer-container {
@@ -82,7 +83,7 @@ header {
   padding: 10px 20px;
   border: none;
   font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   margin: 0px 10px;
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.37);
@@ -116,7 +117,7 @@ header {
 }
 
 .timer {
-  font-size: 110px;
+  font-size: 6rem;
   text-align: center;
   font-weight: 600;
   margin-bottom: 50px;
@@ -136,12 +137,12 @@ header {
 
 .quote {
   font-family: 'Satisfy', cursive;
-  font-size: 25px;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .quote-author {
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -152,7 +153,7 @@ header {
 
 .more-info {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .more-info-link {
@@ -177,12 +178,12 @@ header {
 }
 
 .additional-info h2 {
-  font-size: 20px;
+  font-size: 1.3rem;
   margin-bottom: 10px;
 }
 
 .additional-info p {
-  font-size: 15px;
+  font-size: 1rem;
   margin-bottom: 20px;
   line-height: 1.5;
 }
