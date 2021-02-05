@@ -12,7 +12,7 @@
 <body>
   <main class="all-content">
     <div class="main-content">
-      <header>
+      <header class="container">
         <nav class="top-navigation">
           <h1 class="main-header">Pom Timer </h1>
           <!-- <i class="fas fa-clock"></i> -->
@@ -22,7 +22,7 @@
           </ul>
         </nav>
       </header>
-      <section class="timer-container">
+      <section class="timer-container container">
         <div class="timer-types-container">
           <ul class="timer-types">
             <li><button class="btn" id="pomodoroBtn">Pomodoro</button></li>
@@ -44,21 +44,23 @@
         </div>
       </section>
 
-      <section class="quote-container">
+      <section class="container quote-container">
         <p id="quote" class="quote">“All our dreams can come true, if we have the courage to pursue them.”</p>
         <p id="quoteAuthor" class="quote-author">- Walt Disney</p>
       </section>
 
-      <div class="more-info-container">
+      <div class="container more-info-container">
         <p class="more-info">more info</p>
-        <i class="fas fa-arrow-down"></i>
+        <a class="more-info-link" href="#additionalInfo">
+          <i class="fas fa-arrow-down"></i>
+        </a>
       </div>
   
 
     </div>
     
     
-    <section class="additional-info">
+    <section id="additionalInfo" class="container additional-info">
       <h2 class="">What is the Pomodoro Technique?</h2>
       <p>The Pomodoro technique is a well-researched time-management tool. You set the timer to 25 and you study, research, or anything productive that needs to be done. Then you take a break.</p>
 
@@ -68,12 +70,12 @@
   </main>
   <footer class="footer">
     <div class="social-links">
-      <a href="" target="_blank">
+      <a href="https://www.linkedin.com/in/chochris109/" target="_blank">
         <div class="social-link-container">
           <i class="fab fa-linkedin-in"></i>
         </div>
       </a>
-      <a href="" target="_blank">
+      <a href="https://twitter.com/chris_s_cho" target="_blank">
         <div class="social-link-container">
           <i class="fab fa-twitter"></i>
         </div>

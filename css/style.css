@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,21 +7,25 @@
 
 body {
   background: rgba( 245, 245, 245, 1);
+  font-size: 15px;
+  font-family: Poppins, sans-serif;
+  color: #1f1f1f;
 }
 
 .main-content {
   height: 100vh;
   background: linear-gradient(180deg, rgba(255,150,150,20) 0%, rgba(245, 245, 245, 20) 100%);
-  font-family: Poppins, sans-serif;
-  color: #1f1f1f;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
-header {
-  padding: 2em;
+.container {
   width: 800px;
+}
+
+header {
+  padding: 2em 0;
   margin: 0 auto;
 }
 
@@ -33,7 +38,6 @@ header {
   display: flex;
   justify-content: space-between;
   margin: auto 0;
-  font-size: 20px;
 }
 
 .github-link {
@@ -41,30 +45,33 @@ header {
   font-size: 30px;
 }
 
+.github-link:focus{
+  color: #fff4f4;
+}
+
 .github-link:hover {
-  color: #ffe7e7;
-  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.37);
+  color: #fff4f4;
+}
+
+.github-link:active {
+  color: #000;
 }
 
 .main-header {
   font-size: 30px;
-  color: #1f1f1f;
 }
 
 .timer-container {
-  width: 800px;
   margin: 0 auto;
   padding: 55px 0;
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.37);
-  -webkit-backdrop-filter: blur( 4px );
   border-radius: 20px;
 }
 
 .timer-types {
   display: flex;
   justify-content: center;
-  font-size: 20px;
 }
 
 .timer-types-container {
@@ -79,11 +86,14 @@ header {
   margin: 0px 10px;
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.37);
-  -webkit-backdrop-filter: blur( 4px );
   border-radius: 5px;
 }
 
 .btn:hover {
+  background-color: #ffe7e7;
+}
+
+.btn:focus {
   background-color: #ffe7e7;
 }
 
@@ -100,9 +110,9 @@ header {
   }
 }
 
-
 .activeBtn {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  background: rgba( 255, 255, 255, 0.50 );
 }
 
 .timer {
@@ -113,10 +123,6 @@ header {
   color: #000000;
 }
 
-.timer-options-container {
-
-}
-
 .timer-options {
   display: flex;
   justify-content: center;
@@ -124,24 +130,23 @@ header {
 }
 
 .quote-container {
-  width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
 .quote {
-  font-size: 20px;
-  font-style: italic;
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
 .quote-author {
   font-size: 15px;
+  font-weight: 400;
 }
 
 .more-info-container {
   text-align: center;
-  width: 800px;
   margin: 0 auto 20px;
 }
 
@@ -150,10 +155,24 @@ header {
   font-size: 20px;
 }
 
+.more-info-link {
+  color: #1f1f1f;
+}
+
+.more-info-link:hover {
+  color: rgba(255,150,150,20);
+}
+
+.more-info-link:focus {
+  color: rgba(255,150,150,20);
+}
+
+.more-info-link:active {
+  color: rgba(255,150,150,20);
+}
+
 .additional-info {
-  width: 800px;
   margin: 40px auto;
-  font-family: Poppins, sans-serif;
   color: #1b1b1b;
 }
 
@@ -174,7 +193,7 @@ header {
   font-family: 'Poppins', sans-serif;
   background: #e6e6e6;
   padding: 30px;
-  color: black;
+  color: #1b1b1b;
 }
 
 .social-links {
@@ -200,6 +219,15 @@ header {
 .social-link-container:hover {
   background: rgba(255,150,150,20);
   color: rgba(245, 245, 245, 20);
+}
+
+.social-link-container:focus {
+  background: rgba(255,150,150,20);
+  color: rgba(245, 245, 245, 20);
+}
+
+.social-link-container:active {
+  background: #1b1b1b;
 }
 
 .social-links a {
