@@ -121,10 +121,10 @@ const quote = document.getElementById('quote');
 const author = document.getElementById('quoteAuthor');
 
 async function randomQuote() {
-    const response = await fetch('https://api.quotable.io/random');
+    const response = await fetch('https://api.quotable.io/random?maxLength=50');
     const data = await response.json();
     quote.textContent = `${data.content}`;
     author.textContent = `- ${data.author}`;
 }
 
-setInterval(randomQuote, 100000);
+setInterval(randomQuote, 180000);
