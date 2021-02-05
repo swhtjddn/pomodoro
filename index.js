@@ -102,6 +102,8 @@ class Timer {
     }
 }
 
+screen.orientation.lock() 
+
 const timerContainer = document.getElementById('timer');
 const pomodoroBtn = document.getElementById('pomodoroBtn');
 const shortBreakBtn = document.getElementById('shortBreakBtn');
